@@ -10,8 +10,9 @@ public class PersonInfo {
         this.city = city;
         this.phoneNum = phoneNum;
     }
-
-
+    public String personInfo(){
+        return "Зателефонувати громадянину "+name+" "+surname+" із міста "+city+" можна за номером "+phoneNum;
+    }
 
     @Override
     public String toString() {
@@ -23,7 +24,5 @@ public class PersonInfo {
                 '}';
 
     }
-    public String personInfo(){
-        return "Зателефонувати громадянину "+name+" "+surname+" із міста "+city+" можна за номером "+phoneNum;
-    }
+
 }
